@@ -20,4 +20,4 @@ randoms seed =
   in x : randoms seed'
 
 main :: IO ()
-main = print ("hi")
+main = print (take 10 (randoms (makeSeed 123)))
